@@ -1,7 +1,5 @@
-# Konspekt 2
+# Konspekt 2. Sprawozdanie
 Autor: Weronika Krakowska
-
-# Sprawozdanie
 
 ## Zrzuty ekranu gotowej aplikacji
 <img width="636" height="753" alt="1" src="https://github.com/user-attachments/assets/0ac80c64-d276-4ef7-b0e4-3b524a5dde5b" />
