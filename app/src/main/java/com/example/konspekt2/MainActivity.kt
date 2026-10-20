@@ -68,6 +68,7 @@ fun ConvertScreen() {
 
     val pastelPink = Color(0xFFFCE4EC)
     val outlinePink = Color(0xFFD85887)
+    val isError = inputText.isNotEmpty() && inputText.replace(',', '.').toDoubleOrNull() == null
 
     Column(
         modifier = Modifier
@@ -79,6 +80,12 @@ fun ConvertScreen() {
             value = inputText,
             onValueChange = { inputText = it },
             label = { Text("Długość w metrach") },
+            isError = isError,
+            supportingText = {
+                if (isError) {
+                    Text("Podana wartość nie jest liczbą!")
+                }
+            },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             colors = OutlinedTextFieldDefaults.colors(
                 focusedBorderColor = outlinePink,
